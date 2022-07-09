@@ -15,11 +15,7 @@ function Navbar(props) {
     }, [])
 
     useEffect(() => {
-        console.log(navbar);
-    }, [navbar])
-
-    useEffect(() => {
-        if(!selected) return
+        if (!selected) return
         dispatch(setCurrentCategoryEffect(selected))
     }, [selected])
 
@@ -33,24 +29,6 @@ function Navbar(props) {
 
     return (
         <div className="navbar_wrapper">
-            {/* <div className="navbar_links selected">
-                boxes
-           </div>
-            <div className="navbar_links">
-                clothes
-           </div>
-            <div className="navbar_links">
-                hats
-           </div>
-            <div>
-                sinks
-           </div>
-            <div>
-                space
-           </div>
-            <div>
-                sunglasses
-           </div> */}
             {navbar.length && navbar.map(renderNavbarLinks)}
         </div>
     );

@@ -7,6 +7,7 @@ const CreateRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path="/*" element={<>not Found</>} />
         </Routes>
     )
 }
