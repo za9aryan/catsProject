@@ -1,3 +1,5 @@
-export const SET = "SET"
+
+export const SET_NAVBAR="SET_NAVBAR"
+export const SET_CURRENT_CONTENT="SET_CURRENT_CONTENT"
 
 
