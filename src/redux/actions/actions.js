@@ -11,3 +11,10 @@ export const setCurrentContent = (contentData, id) => ({
     contentData,
     categoryId: id
 })
+
+export const setCurrentContent10 = (contentData, id) => ({
+    type: actionTypes.SET_CURRENT_CONTENT10,
+    contentData,
+    categoryId: id
+})
+

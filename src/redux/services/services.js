@@ -12,7 +12,6 @@ export const getCurrentContent = async (id) => {
     return await axios.get(`/images/search?limit=10&page=1&category_ids=${id}`)
 }
 
-export const LoadMoreContent = async (pageSize, categoryId) => {
-    console.log(pageSize, categoryId);
-    return await axios.get(`/images/search?limit=${pageSize}&page=1&category_ids=${categoryId}`)
+export const LoadMoreContent10 = async (page, categoryId) => {
+    return await axios.get(`/images/search?limit=10&page=${page}&category_ids=${categoryId}`)
 }

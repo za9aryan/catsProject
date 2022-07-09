@@ -14,10 +14,15 @@ const reducer = (state = initialState, action) => {
         navbar: [...action.navbarData]
       };
     case types.SET_CURRENT_CONTENT:
-      console.log(action);
       return {
         ...state,
         content: [...action.contentData],
+        categoryId: action.categoryId
+      }
+    case types.SET_CURRENT_CONTENT10:
+      return {
+        ...state,
+        content: [...state.content, ...action.contentData],
         categoryId: action.categoryId
       }
     default:
